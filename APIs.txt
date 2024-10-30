@@ -1,0 +1,35 @@
+POSTS APIs:
+
+/api/posts/all: Retrieve all posts from various users to compile a news feed.
+/api/posts/:postId: Retrieve a specific post by ID.
+/api/posts/: Retrieve all posts for a specific user to display on their profile page.
+/api/posts/: Create a new post.
+/api/posts/:postId: Delete a specific post.
+/api/posts/:postId: Update a specific post.
+
+COMMENT API:
+
+/api/comments/:postId:  Get comments for a specific post.
+/api/comments/:postId:  Add a comment to a specific post.
+
+/api/comments/:commentId: Delete a specific comment.
+/api/comments/:commentId:  Update a specific comment.
+
+
+LIKES ROUTE:
+
+/api/likes/:id: Get likes for a specific post or comment.
+/api/likes/toggle/:id: Toggle like on a post or comment.
+
+
+FRIENDS API:
+/api/friends/get-friends/:userId:  Get a user's friends.
+/api/friends/get-pending-requests: Get pending friend requests.
+/api/friends/toggle-friendship/:friendId: Toggle friendship with another user.
+/api/friends/response-to-request/:friendId: Accept or reject a friend request.
+
+
+OTP ROUTES:
+/api/otp/send: Send an OTP for password reset.
+/api/otp/verify: Verify an OTP.
+/api/otp/reset-password: Reset the user's password.

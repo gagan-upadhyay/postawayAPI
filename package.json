@@ -1,0 +1,30 @@
+{
+  "name": "postaway2",
+  "version": "1.0.0",
+  "description": "social media backend RESTAPI. Features: like, post, comment, send friend requests, reset password using OTP on cell phone or registered emails. Tech stack: Node, express, mongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon start index.js"
+  },
+  "keywords": [
+    "Postaway2"
+  ],
+  "type": "module",
+  "author": "Gagan Upadhyay",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-session": "^1.18.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.3",
+    "nodemailer": "^6.9.16",
+    "nodemon": "^3.1.7",
+    "twilio": "^5.3.5"
+  }
+}
