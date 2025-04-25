@@ -1,0 +1,17 @@
+version: 'version: 3.8'
+
+services:
+  api:
+    build:
+    container_name: postaway-api
+    ports:
+      - "3000:3000"
+    env_file: 
+      - .env
+    depends_on:
+      - mongo
+    volumes:
+    environment:
+      - NODE_ENV=development
+      - MONGO_URI=mongodb://mongo:27017/postaway
+      - JWT_SECRET=your_jwt_secret

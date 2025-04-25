@@ -23,6 +23,7 @@ import jwtAuth from './src/middlewares/jwt.middleware.js';
 
 // --------------------------------
 dotenv.config();
+const port = process.env.PORT || 3000;
 const server = express();
 server.use(express.json());
 
@@ -56,7 +57,7 @@ server.post('/api/test-body',jwtAuth, (req, res) => {
 
 
 // Specifying ports:
-server.listen(3000, ()=>{
+server.listen(port, ()=>{
     console.log("server is running on port 3000");
     connectUsingMongoose();
 });
